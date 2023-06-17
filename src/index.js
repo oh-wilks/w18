@@ -14,6 +14,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/users", require("./routes/users.routes"));
+app.use("/movies", require("./routes/movies.routes"));
 
 // 4. SERVIDOR
 app.listen(PORT, () => {
